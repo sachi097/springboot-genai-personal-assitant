@@ -15,7 +15,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.concurrent.CompletableFuture;
 
 @Service
-@RequiredArgsConstructor
 public class GenerativeAIService implements IGenerativeAIService {
 
     @Autowired
@@ -23,6 +22,11 @@ public class GenerativeAIService implements IGenerativeAIService {
 
     @Autowired
     private final ChatsRepository chatsRepository;
+
+    GenerativeAIService(Assistant assistant, ChatsRepository chatsRepository){
+        this.assistant = assistant;
+        this.chatsRepository = chatsRepository;
+    }
 
     @Override
     public StreamingResponseBody streamChat(Chat chat) {
