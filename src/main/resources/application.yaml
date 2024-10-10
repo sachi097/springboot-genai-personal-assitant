@@ -1,0 +1,6 @@
+
+server:
+  port: 8081
+
+AWS_ACCESS_KEY_ID: key_here
+AWS_SECRET_ACCESS_KEY: secret_here
