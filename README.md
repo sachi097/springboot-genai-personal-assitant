@@ -31,3 +31,4 @@ You can run the project directly by opening the project in IntelliJ IDEA
 
 https://github.com/user-attachments/assets/017f0101-d715-461e-a524-1f2e4ecc3c6f
 
+[Youtube demo](https://youtu.be/HH7BskWgU6Q)
