@@ -1,1 +1,1 @@
-KinderLit Backend on GPU server
+GenAi personal assistant using Spring Boot and Ollama
