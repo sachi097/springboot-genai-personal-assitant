@@ -6,6 +6,7 @@ GenAi personal assistant using Spring Boot and Ollama
 
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [Maven](https://www.baeldung.com/install-maven-on-windows-linux-mac)
+- [curl](https://help.ubidots.com/en/articles/2165289-learn-how-to-install-run-curl-on-windows-macosx-linux)
 
 2. Clone repository
 ```
@@ -22,6 +23,21 @@ mvn clean
 mvn -f pom.xml clean package -DskipTests
 java -jar ./target/*.jar  
 ```
+
+6. Test with curl
+```
+curl -XPOST -H "Content-type: application/json" -d '{
+   "messages": [
+        {
+            "userId": "sachinTestId2",
+            "content": "hello",
+            "timestamp": 1728265388553,
+            "role": "user"
+        }
+    ]
+}' 'http://localhost:8081/api/chat/getChatResponse'
+```
+
 
 You can run the project directly by opening the project in IntelliJ IDEA
 
